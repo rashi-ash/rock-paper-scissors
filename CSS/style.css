@@ -66,3 +66,13 @@ img {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.header{
+    width: 100%;
+}
+.title{
+    display: inline-block;
+    width: 80px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
