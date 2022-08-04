@@ -86,3 +86,62 @@ margin-left:83%;
 margin-top: 0%;
 color: #2610AC;
 }
+.score{
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 180px;
+	z-index: 1;
+    left: 24%;
+    color: #1977CE;
+}
+
+/* Score */
+.p-count,.c-count{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+#opponent-choice {
+    width: 140px;
+    height: 140px;
+    background-color: rgb(148, 210, 242);
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+#your-choice {
+    width: 140px;
+    height: 140px;
+    background-color: rgb(148, 210, 242);
+    margin-top: 100px; 
+    margin-left: 20px;
+}
+.scoreimg{
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 180px;
+	z-index: 1;
+    left: 23%;
+    color: #1977CE;
+}
+/* displaying three buttons in one line */
+.options{
+	display: flex;
+	width: 55vw;
+	height: 7vw;
+	justify-content: space-evenly;
+	margin-top: 18rem;
+   margin-left: 21%;
+}
+
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+	padding: 0.8rem;
+	width: 100px;
+	background:#ffffff;
+    border: none;
+}
