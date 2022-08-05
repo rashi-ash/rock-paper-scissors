@@ -128,20 +128,28 @@ color: #2610AC;
     left: 23%;
     color: #1977CE;
 }
-/* displaying three buttons in one line */
-.options{
-	display: flex;
+
+#choices {
+    display: flex;
 	width: 55vw;
-	height: 7vw;
 	justify-content: space-evenly;
 	margin-top: 18rem;
    margin-left: 21%;
 }
 
-/* Styling on all three buttons */
-.rock, .paper, .scissor{
-	padding: 0.8rem;
+#choices img {
+    padding: 0.8rem;
 	width: 100px;
 	background:#ffffff;
     border: none;
+}
+/* Reload button style */
+.reload{
+    margin-top: 2rem;
+    margin-left: 45%;
+}
+.result{
+	margin-top: 20%;
+    margin-left: 48%;
+	font-size: 1.2rem;
 }
