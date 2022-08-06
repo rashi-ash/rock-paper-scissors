@@ -47,7 +47,7 @@ const container = () => {
 				const computerChoice = computerOptions[choiceNumber];
 
 				// Function to check who wins
-				winner(this.innerText, computerChoice)
+				winner(you, computerChoice)
 
 				// Calling gameOver function after 10 moves
 				if (moves == 10) {
@@ -107,7 +107,7 @@ const container = () => {
 	// Function to run when game is over
 	const gameOver = (playerOptions, movesLeft) => {
 
-		const chooseMove = document.querySelector('.move');
+		const chooseMove = document.querySelector('.movesleft');
 		const result = document.querySelector('.result');
 		const reloadBtn = document.querySelector('.reload');
 
