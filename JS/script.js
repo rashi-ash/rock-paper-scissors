@@ -1,11 +1,9 @@
 // script.js
-
-// Complete logic of game inside this function
 const container = () => {
 	let playerScore = 0;
 	let computerScore = 0;
 	let moves = 0;
-	//choice
+	//  choose your moove
 	var you;
 	var choices = ["rock", "paper", "scissor"];
 
@@ -18,17 +16,16 @@ const container = () => {
 			document.getElementById("choices").append(choice);
 		}
 	}
-
+	// select choice
 	function selectChoice() {
 		you = this.id;
 		document.getElementById("your-choice").src = you + ".png";
-
 		//random for oppponent
 		opponent = choices[Math.floor(Math.random() * 3)]; //0- .999999 * 3 = 0-2.99999
 		document.getElementById("opponent-choice").src = opponent + ".png";
 
 	}
-	// Function to
+	// Function to play game.
 	const playGame = () => {
 		choice = document.querySelector('#choices');
 		const playerOptions = [choice];
@@ -44,7 +41,7 @@ const container = () => {
 
 
 				// Function to check who wins
-				winner(you,opponent)
+				winner(you, opponent)
 
 				// Calling gameOver function after 10 moves
 				if (moves == 10) {
@@ -116,17 +113,14 @@ const container = () => {
 		movesLeft.style.display = 'none';
 
 		if (playerScore > computerScore) {
-			result.style.fontSize = '2rem';
 			result.innerText = 'You Won The Game'
 			result.style.color = '#308D46';
 		}
 		else if (playerScore < computerScore) {
-			result.style.fontSize = '2rem';
 			result.innerText = 'You Lost The Game';
 			result.style.color = 'red';
 		}
 		else {
-			result.style.fontSize = '2rem';
 			result.innerText = 'Tie';
 			result.style.color = 'grey'
 		}
@@ -143,5 +137,5 @@ const container = () => {
 
 }
 
-// Calling the game function
+// Calling the container function
 container();

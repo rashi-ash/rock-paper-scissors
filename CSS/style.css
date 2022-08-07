@@ -1,4 +1,4 @@
-
+/* index page  */
 .leftcontainer {
     width: 100%;
 }
@@ -35,10 +35,6 @@ img {
 .btn {
     background: #3498db;
     background-image: -webkit-linear-gradient(top, #3498db, #2610AC);
-    background-image: -moz-linear-gradient(top, #3498db, #2610AC);
-    background-image: -ms-linear-gradient(top, #3498db, #2610AC);
-    background-image: -o-linear-gradient(top, #3498db, #2610AC);
-    background-image: linear-gradient(to bottom, #3498db, #2610AC);
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
     border-radius: 10px;
@@ -48,38 +44,26 @@ img {
     padding: 10px 25px 10px 25px;
     text-decoration: none;
     margin: 20px 380px;
+    border-style: none;
 }
 
-.btn:hover {
-    background: #f065e4;
-    background-image: -webkit-linear-gradient(top, #f065e4, #9b1ab8);
-    background-image: -moz-linear-gradient(top, #f065e4, #9b1ab8);
-    background-image: -ms-linear-gradient(top, #f065e4, #9b1ab8);
-    background-image: -o-linear-gradient(top, #f065e4, #9b1ab8);
-    background-image: linear-gradient(to bottom, #f065e4, #9b1ab8);
+.btn:hover,
+.reload:hover {
+    background: #9165f0;
+    background-image: -webkit-linear-gradient(top, #30129c, #b8adec);
     text-decoration: none;
+    color: #ffffff;
 }
 
 .center {
-    margin-top: 220px;
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-.header {
-    width: 100%;
-}
-
-.title {
-    display: inline-block;
-    width: 80px;
-    margin-top: 50px;
-    margin-left: 50px;
-
-}
+/* home page */
 
 .move {
     margin-left: 230px;
@@ -88,12 +72,14 @@ img {
 }
 
 .movesleft {
-    margin-left: 83%;
-    margin-top: 0%;
     color: #2610AC;
+    margin-top: 18%;
+    text-align: center;
+    font-size: 2.2rem;
 }
 
-.score {
+.score,
+.scoreimg {
     display: flex;
     width: 50vw;
     justify-content: space-evenly;
@@ -104,7 +90,10 @@ img {
     color: #1977CE;
 }
 
-/* Score */
+.scoreimg {
+    left: 23%;
+}
+
 .p-count,
 .c-count {
     text-align: center;
@@ -112,31 +101,13 @@ img {
     margin-top: 1rem;
 }
 
-#opponent-choice {
-    width: 140px;
-    height: 140px;
-    background-color: rgb(148, 210, 242);
-    margin-top: 100px;
-    margin-left: 20px;
-}
-
+#opponent-choice,
 #your-choice {
     width: 140px;
     height: 140px;
     background-color: rgb(148, 210, 242);
     margin-top: 100px;
     margin-left: 20px;
-}
-
-.scoreimg {
-    display: flex;
-    width: 50vw;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 180px;
-    z-index: 1;
-    left: 23%;
-    color: #1977CE;
 }
 
 #choices {
@@ -155,9 +126,7 @@ img {
 
 .reload {
     background: #ffffff;
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
+    border-radius: 12px;
     font-family: Arial;
     color: #2610AC;
     border: solid #ffffff 0px;
@@ -169,25 +138,89 @@ img {
     margin-bottom: 0px;
 }
 
-.reload:hover {
-    background: #211d99;
-    background-image: -webkit-linear-gradient(top, #211d99, #7682ed);
-    background-image: -moz-linear-gradient(top, #211d99, #7682ed);
-    background-image: -ms-linear-gradient(top, #211d99, #7682ed);
-    background-image: -o-linear-gradient(top, #211d99, #7682ed);
-    background-image: linear-gradient(to bottom, #211d99, #7682ed);
-    text-decoration: none;
-}
-
 .result {
-    /* margin-top: 20%; */
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
-.movesleft {
-    margin-top: 18%;
-    margin-left: 41%;
-    /* text-align: center; */
-    font-size: 2.2rem;
+
+@media screen and (max-width: 612px) {
+
+    /* index page */
+    .middilecontainer {
+        text-align: center;
+        font-size: 30px;
+        margin: 7px 22%;
+    }
+
+    .leftcontainer img {
+        width: 10%;
+        margin-top: 15px;
+    }
+
+    .rightcontainer {
+        margin-top: 10px;
+        margin-left: 7%;
+    }
+
+    .img {
+        width: 200px;
+    }
+
+    .btn {
+        margin: 20px 30px;
+        ;
+    }
+
+    /* home page */
+    .move {
+        margin-left: 34%;
+        margin-top: 0%;
+    }
+
+    .movesleft {
+        margin-top: 75%;
+        font-size: 1.5rem;
+    }
+
+    .score,
+    .scoreimg {
+        margin-top: 10%;
+        margin-left: 15%;
+        width: 20vw;
+        position: absolute;
+        z-index: 0;
+        text-align: center;
+        font-size: small;
+    }
+
+    .computerScore {
+        margin-left: 50px;
+    }
+
+    #opponent-choice,
+    #your-choice {
+        width: 80px;
+        height: 80px;
+        margin-top: 120px;
+        margin-left: 25px;
+    }
+
+    #choices {
+        width: 30vw;
+        margin-left: 30%;
+    }
+
+    #choices img {
+        padding: 0rem;
+        width: 60px;
+    }
+
+    .reload {
+        margin-left: 37%;
+    }
+.result{
+font-size: 1.5rem;
+}
+
 }
