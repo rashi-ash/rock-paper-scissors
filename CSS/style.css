@@ -135,7 +135,6 @@ img {
     text-decoration: none;
     margin-top: 2rem;
     margin-left: 45%;
-    margin-bottom: 0px;
 }
 
 .result {
@@ -219,8 +218,9 @@ img {
     .reload {
         margin-left: 37%;
     }
-.result{
-font-size: 1.5rem;
-}
+
+    .result {
+        font-size: 1.5rem;
+    }
 
 }
