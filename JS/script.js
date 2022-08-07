@@ -1,4 +1,4 @@
-// app.js
+// script.js
 
 // Complete logic of game inside this function
 const container = () => {
@@ -43,11 +43,8 @@ const container = () => {
 				movesLeft.innerText = `Moves left :${10 - moves}`;
 
 
-				const choiceNumber = Math.floor(Math.random() * 3);
-				const computerChoice = computerOptions[choiceNumber];
-
 				// Function to check who wins
-				winner(you, computerChoice)
+				winner(you,opponent)
 
 				// Calling gameOver function after 10 moves
 				if (moves == 10) {
@@ -110,7 +107,6 @@ const container = () => {
 		const chooseMove = document.querySelector('.movesleft');
 		const result = document.querySelector('.result');
 		const reloadBtn = document.querySelector('.reload');
-
 		playerOptions.forEach(option => {
 			option.style.display = 'none';
 		})
